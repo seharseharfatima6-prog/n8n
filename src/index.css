@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  .grid-pattern {
+    background-size: 20px 20px;
+    background-image: 
+      radial-gradient(circle, #2C2E34 1.2px, transparent 1.2px);
+    background-color: #0F1115;
+  }
+}
+
+/* Dynamic ants running line animation for executed connectors */
+@keyframes ants {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.running-line {
+  stroke-dasharray: 6, 4;
+  animation: ants 1s linear infinite;
+}

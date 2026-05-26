@@ -1,0 +1,6 @@
+{
+  "name": "n8n Workflow Studio",
+  "description": "An interactive, beautiful visual workflow builder inspired by n8n. Add nodes, connect inputs, configure parameters, and execute multi-node AI workflows powered by a server-side Gemini API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
